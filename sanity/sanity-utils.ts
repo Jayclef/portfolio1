@@ -1,5 +1,6 @@
 import { JobType } from "@/types/Job";
 import { Profile } from "@/types/Profile";
+import { contactType } from "@/types/contact";
 import { ProjectType } from "@/types/Project";
 import { createClient, groq } from "next-sanity";
 
@@ -79,4 +80,21 @@ export async function getSingleProject(slug: string) {
     }`,
     { slug }
   );
+}
+
+export async function getContact(){
+  const client = createClient({
+    projectId: "u6sew76k",
+    dataset: "production",
+    apiVersion: "2023-12-04",
+  });
+  //  return client.fetch(
+  //    groq`*[_type == "contact"]{
+  //     _id, 
+  //     name,
+  //     email: 
+  //     message,
+     
+  //   }`
+  //  );
 }

@@ -26,6 +26,7 @@ export default function HeroSvg() {
           <rect width="1573" height="906" fill="white" />
         </clipPath>
       </defs>
+          
     </svg>
   );
 }
