@@ -9,13 +9,13 @@ export default async function About() {
   const profile = await getProfile();
 
   return (
-    <main className="lg:max-w-7xl mx-auto max-w-3xl md:px-16 px-6">
+    <main className=" dark:bg-black lg:max-w-7xl mx-auto max-w-3xl md:px-16 px-6 py-10">
       {profile &&
         profile.map((data) => (
           <div key={data._id}>
             <section className="grid lg:grid-cols-2 grid-cols-1 gap-x-6 justify-items-center">
               <div className="order-2 lg:order-none">
-                <h1 className="lg:text-5xl text-4xl lg:leading-tight basis-1/2 font-bold mb-8">
+                <h1 className=" dark:text-white lg:text-5xl text-4xl lg:leading-tight basis-1/2 font-bold mb-8">
                   I&apos;m {data.fullName}. I live in {data.location}, where I
                   design the future.
                 </h1>
@@ -38,7 +38,7 @@ export default async function About() {
 
                   <a
                     href={`${data.resumeURL}?dl=${data.fullName}_resume`}
-                    className="flex items-center justify-center gap-x-2 bg-[#1d1d20] border border-transparent hover:border-zinc-700 rounded-md duration-200 py-2 text-center cursor-cell font-medium"
+                    className="flex items-center justify-center gap-x-2 dark:bg-[#ffff] bg-[#ccc] border border-transparent hover:border-zinc-700 rounded-md duration-200 py-2 text-center cursor-cell font-medium"
                   >
                     <BiFile className="text-base" /> Download Resumé
                   </a>
@@ -48,9 +48,9 @@ export default async function About() {
                   <li>
                     <a
                       href={`mailto:${data.email}`}
-                      className="flex items-center gap-x-2 hover:text-purple-400 duration-300"
+                      className="flex items-center gap-x-2 dark:text-white hover:text-purple-400 duration-300"
                     >
-                      <BiEnvelope className="text-lg" />
+                      <BiEnvelope className="text-lg dark:text-white" />
                       {data.email}
                     </a>
                   </li>
@@ -69,7 +69,7 @@ export default async function About() {
                 {data.skills.map((skill, id) => (
                   <li
                     key={id}
-                    className="bg-[#1d1d20] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1"
+                    className="bg-[#ccc] dark:bg-[#ffff] border border-transparent text-base hover:border-zinc-700 rounded-md px-2 py-1"
                   >
                     {skill}
                   </li>

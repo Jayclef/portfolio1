@@ -6,7 +6,7 @@ export default async function Job() {
   const job = await getJob();
 
   return (
-    <section className="mt-32">
+    <section className="mt-6 py-8 dark:bg-black">
       <div className="mb-16">
         <h2 className="font-semibold text-4xl mb-4">Work Experience</h2>
       </div>

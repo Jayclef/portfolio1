@@ -33,10 +33,10 @@ export default async function Project({ params }: Props) {
  
 
   return (
-    <main className="max-w-6xl mx-auto lg:px-16 px-8">
+    <main className="dark:bg-black max-w-7xl mx-auto lg:px-16 px-8 py-10">
       <div className="max-w-3xl mx-auto">
         <div className="flex items-start justify-between mb-4">
-          <h1 className="font-bold lg:text-5xl text-3xl lg:leading-tight mb-4">
+          <h1 className="font-bold dark:text-white lg:text-5xl text-3xl lg:leading-tight mb-4">
             {project.name}
           </h1>
 
