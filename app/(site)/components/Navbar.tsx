@@ -6,7 +6,6 @@ import Logo2 from "../icons/jsoft.png";
 import { LiaToggleOnSolid } from "react-icons/lia";
 import { BsToggle2Off } from "react-icons/bs";
 import { SiToggltrack } from "react-icons/si";
-import { FaBarsStaggered } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import useColorMode from "../hooks/useColorMode";
