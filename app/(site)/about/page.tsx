@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { getProfile } from "@/sanity/sanity-utils";
-
-
 import { PortableText } from "@portabletext/react";
 import { BiEnvelope, BiFile } from "react-icons/bi";
 
